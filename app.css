@@ -6,11 +6,17 @@ body {
 }
 
 .content {
-    width: 70vw;
+    width: 80vw;
     height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
+}
+
+@media only screen and (max-width: 1900px) {
+    .content{
+        width: 90vw;
+    }
 }
 
 header {
@@ -28,10 +34,6 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-ul li {
-    /* border: 2px solid black; */
 }
 
 .logo {
@@ -52,8 +54,8 @@ ul li {
 }
 
 #catalogue {
-    margin-right: -70px;
-    width: 200px;
+    margin-right: -80px;
+    width: 10vw;
     position: relative;
     background-color: rgb(13, 71, 108);
     /* padding: 20px; */
@@ -75,7 +77,7 @@ ul li {
 
 #search-field {
     /* margin-left: -100px; */
-    width: 500px;
+    width: 26vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,6 +109,70 @@ ul li {
     cursor: pointer;
 }
 
+#ph-number {
+    display: flex;
+    width: 12vw;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+    font-size: 1rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#ph-number img {
+    width: 20px;
+    height: 20px;
+}
+
+#ph-number p {
+    text-align: right;
+    margin: 0;
+}
+
+#ph-number:hover::after {
+    content: '+998 71 000-00-00';
+    position: absolute;
+    top: 150%;
+    left: 20px;
+    width: 12vw;
+    height: 60px;
+    z-index: 10;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(231, 226, 226);
+}
+
+#log-in {
+    width: 5vw;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+#log-in img {
+    width: 20px;
+    height: 20px;
+}
+
+#log-in:hover {
+    background-color: rgba(13, 71, 108, 0.8);
+    border-radius: 5px;
+}
+
+#log-in:hover img,  #log-in:hover div{
+    filter: invert(100%);
+    cursor: pointer;
+    font-weight: 700;
+}
+
 
 
 
@@ -119,5 +185,4 @@ nav {
 .carousel {
     height: 700px;
     border: 2px solid blue;
-
 }
