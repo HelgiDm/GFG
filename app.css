@@ -52,13 +52,19 @@ ul li {
 #catalogue {
     margin-right: -70px;
     width: 200px;
+    position: relative;
+    background-color: blue;
+    /* padding: 20px; */
 }
 
-#catalogue div {
-    height: 70%;
-    background-color: blue;
-    color: wheat;
-    margin: auto 0;
+#catalogue h2 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+
 }
 
 
