@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 70vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 100px;
+    border: 2px solid red;
+    padding: 20px;
+    /* box-sizing: border-box; */
+}
+
+ul {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    border: 2px solid black;
+}
+
+.logo {
+    width: 200px;
+    height: 70px;
+    overflow: hidden;
+    position: relative;;
+
+}
+
+.logo img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#catalogue {
+    margin-right: -70px;
+    width: 200px;
+}
+
+#catalogue div {
+    height: 70%;
+    background-color: blue;
+    color: wheat;
+    margin: auto 0;
+}
+
+
+#search-field {
+    /* margin-left: -100px; */
+    width: 500px;
+}
+
+#search-field input {
+    width: 100%;
+    height: 70%;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+nav {
+    height: 100px;
+    border: 2px solid violet;
+}
+
+
+.carousel {
+    height: 700px;
+    border: 2px solid blue;
+
+}
