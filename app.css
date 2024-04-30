@@ -218,7 +218,7 @@ nav  {
    justify-content: center;
    align-items: center;
    position: relative;
-
+    overflow: hidden;
 }
 
 .carousel .images {
@@ -265,3 +265,41 @@ nav  {
     transform: scale(1.5);
     background-color: rgb(13, 71, 108);
 }
+
+.side-btn {
+    display: flex;
+    width: 110%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 1vw;
+    position: absolute;
+    transition: all 0.2s ease-out;
+}
+
+.side-btn div {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(231, 226, 226);
+    color: rgba(0, 0, 0, 0.485);
+    z-index: 10;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    /* display: none; */
+}
+
+.side-btn div:hover {
+    background-color: rgb(13, 71, 108);
+    color: white;
+}
+
+.side-btn:hover {
+    width: 100%;
+}
+
+.images:hover ~ .side-btn {
+    width: 100%;
+} 
