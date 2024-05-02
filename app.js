@@ -1,8 +1,34 @@
-// Appearing of side buttons when hovering over the carousel
-// let sideBtnBox = document.querySelector('.side-btn');
-// // let sideBtnDiv = document.querySelector('.side-btn div');
-// let carouselImg = document.querySelector('.carousel .images');
+// Carousel
+let crslBtnLeft = document.querySelector('#side-btn-left');
+let crslBtnRight = document.querySelector('#side-btn-right')
+let crslSpecial = document.querySelector('#crsl-special');
+let crslImages = document.querySelector('.images');
 
-// carouselImg.addEventListener('mouseover', () => {
-//     sideBtnBox.style.width = '100%';
-// })
+
+crslBtnLeft.addEventListener('click', () => {
+    if (crslSpecial.previousElementSibling) {
+        crslSpecial.previousElementSibling.id = 'crsl-special';
+        crslSpecial.id = '';
+        crslSpecial = document.querySelector('#crsl-special');
+    }
+    else {
+        crslImages.children[crslImages.children.length - 1].id = 'crsl-special';
+        crslSpecial.id = '';
+        crslSpecial = document.querySelector('#crsl-special');
+    }
+});
+
+crslBtnRight.addEventListener('click', () => {
+    if (crslSpecial.nextElementSibling) {
+        crslSpecial.nextElementSibling.id = 'crsl-special';
+        crslSpecial.id = '';
+        crslSpecial = document.querySelector('#crsl-special');
+    }
+    else {
+        crslImages.children[0].id = 'crsl-special';
+        crslSpecial.id = '';
+        crslSpecial = document.querySelector('#crsl-special');
+    }
+})
+
+

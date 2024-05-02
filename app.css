@@ -238,7 +238,7 @@ nav  {
     display: none;
 }
 
-#special {
+#crsl-special {
     display: block;
 }
 
@@ -266,6 +266,11 @@ nav  {
     background-color: rgb(13, 71, 108);
 }
 
+#crsl-control-special {
+    transform: scale(1.5);
+    background-color: rgb(13, 71, 108);
+}
+
 .side-btn {
     display: flex;
     width: 110%;
@@ -288,10 +293,10 @@ nav  {
     align-items: center;
     font-size: 1.5rem;
     font-weight: 700;
-    /* display: none; */
 }
 
 .side-btn div:hover {
+    cursor: pointer;
     background-color: rgb(13, 71, 108);
     color: white;
 }
