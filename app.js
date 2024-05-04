@@ -50,8 +50,8 @@ for (let child of children) {
         crslSpecial.id = '';
         crslSpecial = document.querySelector('#crsl-special');
     });
-
-
-
-
 }
+
+
+// Tab Content
+let tabTitles = document.querySelector('.tab-title li');

@@ -7,7 +7,7 @@ body {
 
 .content {
     width: 80vw;
-    height: 100vh;
+    height: 400vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -309,3 +309,48 @@ nav  {
 .images:hover ~ .side-btn {
     width: 100%;
 } 
+
+
+.tab-title {
+    height: 70px;
+}
+
+.tab-title li {
+    height: 100%;
+    width: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(13, 71, 108);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.tab-title li:first-child {
+    color: black;
+    font-weight: 400;
+}
+
+.tab-title li:first-child:hover {
+    cursor: default;
+}
+
+.tab-title li:hover {
+    cursor: pointer;
+}
+
+#tab-title-active {
+    background-color: rgb(231, 226, 226);
+    border-radius: 5px;
+}
+
+.tab-content {
+    margin-top: -10px;
+    height: 50vh;
+    background-color: rgb(231, 226, 226);
+    display: none;
+}
+
+#tab-content-active {
+    display: block;
+}
