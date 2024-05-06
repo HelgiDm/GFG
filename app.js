@@ -43,15 +43,30 @@ crslBtnRight.addEventListener('click', () => {
 let children = crslControlBtn.children;
 for (let child of children) {
     child.addEventListener('click', () => {
-        child.id = 'crsl-control-special';
-        crslControlBtnSpecial.id = '';
-        crslControlBtnSpecial = document.querySelector('#crsl-control-special');
-        crslImages.children[Array.from(children).indexOf(crslControlBtnSpecial)].id = 'crsl-special';
-        crslSpecial.id = '';
-        crslSpecial = document.querySelector('#crsl-special');
+        if (!child.id) {
+            child.id = 'crsl-control-special';
+            crslControlBtnSpecial.id = '';
+            crslControlBtnSpecial = document.querySelector('#crsl-control-special');
+            crslImages.children[Array.from(children).indexOf(crslControlBtnSpecial)].id = 'crsl-special';
+            crslSpecial.id = '';
+            crslSpecial = document.querySelector('#crsl-special');
+        }
+        
     });
 }
 
 
 // Tab Content
-let tabTitles = document.querySelector('.tab-title li');
+let tabTitleActive = document.querySelector('#tab-title-active');
+let tabTitles = document.querySelector('.tab-title ul');
+let ulTabTitles = tabTitles.children;
+for (let title of ulTabTitles) {
+    title.addEventListener('click', () => {
+        if (!title.id) {
+            title.id = 'tab-title-active';
+            tabTitleActive.id = '';
+            tabTitleActive = document.querySelector('#tab-title-active');
+        }
+    })
+}
+
